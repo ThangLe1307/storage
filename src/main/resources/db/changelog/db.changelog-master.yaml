@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: V202505161658__init_storage_database
+      author: thienthang.letran
+      runOnChange: false
+      comment: Init storage database
+      changes:
+        - sqlFile:
+            path: db/changelog/changeset/V202505161658__init_storage_database.sql
+            dbms: postgresql
+            splitStatements: false
+            stripComments: true
