@@ -10,3 +10,15 @@ databaseChangeLog:
             dbms: postgresql
             splitStatements: false
             stripComments: true
+
+  - changeSet:
+        id: V202505181203__change_table_name
+        author: thienthang.letran
+        runOnChange: false
+        comment: Rename table
+        changes:
+            - sqlFile:
+                  path: db/changelog/changeset/V202505181203__change_table_name.sql
+                  dbms: postgresql
+                  splitStatements: false
+                  stripComments: true
